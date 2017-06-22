@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "96653430878",
+    "firebase_url": "https://shoppingfun-a3492.firebaseio.com",
+    "project_id": "shoppingfun-a3492",
+    "storage_bucket": "shoppingfun-a3492.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96653430878:android:6f48bb9f97ede378",
+        "android_client_info": {
+          "package_name": "hackeru.edu.shoppingfun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96653430878-jau8ervr2pfqots9bom6g3qaab5vu9cg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hackeru.edu.shoppingfun",
+            "certificate_hash": "6bf2d8f37aacd5b59bb94afe7d3a2c2be4c0e8bb"
+          }
+        },
+        {
+          "client_id": "96653430878-t86o4bu34bttnkaos71v9ugah1jrmtja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTxv7PT1PJDlHcUCGMDccF2pI648ZeZsI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96653430878-t86o4bu34bttnkaos71v9ugah1jrmtja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
