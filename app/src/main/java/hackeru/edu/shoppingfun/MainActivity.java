@@ -9,6 +9,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity
             //parse the intent into a specialized object. (Instead of hassling with the intent extras... )
 
             //TODO: Add No Internet dialog...
+            new AlertDialog.Builder(this).setTitle("No Internet").setMessage("Connect").show();
         }else if (resultCode == RESULT_OK && requestCode == RC_SIGN_IN){
             //success.
             //save the user.
