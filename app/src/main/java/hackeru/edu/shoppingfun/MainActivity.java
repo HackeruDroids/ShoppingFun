@@ -29,6 +29,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
+import hackeru.edu.shoppingfun.fragments.UserListFragment;
 import hackeru.edu.shoppingfun.models.User;
 
 public class MainActivity extends AppCompatActivity
@@ -122,7 +123,10 @@ public class MainActivity extends AppCompatActivity
 
     //We have a user!
     private void initWithUser() {
-
+        getSupportFragmentManager().
+                beginTransaction().
+                replace(R.id.container, new UserListFragment()).
+                commit();
     }
 
 

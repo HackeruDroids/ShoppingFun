@@ -5,9 +5,8 @@
     android:layout_height="match_parent"
     tools:context="hackeru.edu.shoppingfun.fragments.UserListFragment">
 
-
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fabAddUserList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -22,8 +21,8 @@
         app:srcCompat="@drawable/ic_edit" />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_above="@id/floatingActionButton"
         android:id="@+id/rvUserLists"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_above="@id/fabAddUserList" />
 </RelativeLayout>
