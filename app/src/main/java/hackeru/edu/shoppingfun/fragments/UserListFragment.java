@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +48,11 @@ public class UserListFragment extends Fragment {
         unbinder = ButterKnife.bind(this, view);
 
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (currentUser == null){
+            Log.e("Tomer", "Null user");
+            return view;
+        }
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("UserLists").child(currentUser.getUid());//TODO: Handle nulls
 
         rvUserLists.setLayoutManager(new LinearLayoutManager(getContext()));
