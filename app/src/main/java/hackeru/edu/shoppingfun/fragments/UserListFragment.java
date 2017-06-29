@@ -27,6 +27,7 @@ import butterknife.OnClick;
 import butterknife.Unbinder;
 import hackeru.edu.shoppingfun.R;
 import hackeru.edu.shoppingfun.dialogs.AddListDialogFragment;
+import hackeru.edu.shoppingfun.dialogs.ShareFragment;
 import hackeru.edu.shoppingfun.models.UserList;
 
 /**
@@ -86,20 +87,34 @@ public class UserListFragment extends Fragment {
         protected void populateViewHolder(UserListViewHolder viewHolder, UserList model, int position) {
             viewHolder.tvListName.setText(model.getName());
             Glide.with(fragment.getContext()).load(model.getOwnerImage()).into(viewHolder.ivProfile);
+            viewHolder.userListsFragment = fragment;
         }
 
         //1)ViewHolder
-        public static class UserListViewHolder extends RecyclerView.ViewHolder {
+        public static class UserListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
             //Properties:
             ImageView ivProfile;
             TextView tvListName;
             FloatingActionButton fabShare;
+            Fragment userListsFragment;
 
             public UserListViewHolder(View itemView) {
                 super(itemView);
                 ivProfile = (ImageView) itemView.findViewById(R.id.ivUserProfile);
                 tvListName = (TextView) itemView.findViewById(R.id.tvListName);
                 fabShare = (FloatingActionButton) itemView.findViewById(R.id.fabShare);
+
+                fabShare.setOnClickListener(this);
+            }
+
+            @Override
+            public void onClick(View v) {
+                try {
+                    ShareFragment dialog = new ShareFragment();
+                    dialog.show(userListsFragment.getChildFragmentManager(), "shareDialog");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
