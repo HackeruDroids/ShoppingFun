@@ -4,6 +4,7 @@ package hackeru.edu.shoppingfun.dialogs;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialogFragment;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
@@ -58,7 +60,7 @@ public class ShareFragment extends BottomSheetDialogFragment {
         rvUsers.setLayoutManager(new LinearLayoutManager(getContext()));
 
         Query query = FirebaseDatabase.getInstance().getReference("Users");
-        adapter = new UserAdapter(getContext(), query, model);
+        adapter = new UserAdapter(this, getContext(), query, model);
         rvUsers.setAdapter(adapter);
 
         return view;
@@ -75,12 +77,13 @@ public class ShareFragment extends BottomSheetDialogFragment {
         //Properties:
         private Context context;
         private UserList userList;
-
+        private DialogFragment dialog;
         //Constructor that takes the Query, Context & UserList.
-        public UserAdapter(Context context, Query query, UserList userList) {
+        public UserAdapter(DialogFragment dialog, Context context, Query query, UserList userList) {
             super(User.class, R.layout.share_item, UserViewHolder.class, query);
             this.context = context;
             this.userList = userList;
+            this.dialog = dialog;
         }
 
         @Override
@@ -92,11 +95,14 @@ public class ShareFragment extends BottomSheetDialogFragment {
             Glide.with(context).load(model.getProfileImage()).into(viewHolder.ivProfile);
             viewHolder.user = model;
             viewHolder.userList = userList;
+
+            viewHolder.dialog = dialog;
         }
 
         //ViewHolder
         public static class UserViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
             CircleImageView ivProfile;
+            DialogFragment dialog;//
             TextView tvUserName;
             UserList userList;
             User user;
@@ -111,7 +117,15 @@ public class ShareFragment extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
                 //1) get a ref to the userList table
+                DatabaseReference ref = FirebaseDatabase.getInstance().getReference("UserLists").
+                        child(user.getUid()).
+                        child(userList.getListID());
+
                 //2) ref.setValue(...)
+                ref.setValue(userList);
+
+                dialog.dismiss();
+
             }
         }
     }

@@ -12,9 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10615667-f80d-4d87-9b57-ad292938e533" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/AppManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/BaseActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/ListProductsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_products.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/UserListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/UserListFragment.java" />
     </list>
     <ignored path="ShoppingFun.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,9 +71,114 @@
       <file leaf-file-name="ShareFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+            <state relative-caret-position="-1451">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_list_products.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_products.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListProductsFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/ListProductsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/AppManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/BaseActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/models/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <element signature="docComment;class#User#0" expanded="false" />
+                <element signature="method#User#0;class#User#0" expanded="false" />
+                <element signature="method#User#1;class#User#0" expanded="false" />
+                <element signature="method#toString#0;class#User#0" expanded="false" />
+                <element signature="method#writeToParcel#0;class#User#0" expanded="false" />
+                <element signature="method#User#2;class#User#0" expanded="false" />
+                <element signature="class#1953:2213" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/models/UserList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#UserList#0;class#UserList#0" expanded="false" />
+                <element signature="method#UserList#1;class#UserList#0" expanded="false" />
+                <element signature="method#toString#0;class#UserList#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1867,7 +1982,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\hackeru\Documents\Tomer\AndroidEvening\ShoppingFun" value="4495039243029" />
+        <entry key="C:\Users\hackeru\Documents\Tomer\AndroidEvening\ShoppingFun" value="4495052448136" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2222,14 +2337,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_list_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/AddListDialogFragment.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
@@ -2240,6 +2353,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/models/UserList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/models/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/UserListFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/DontEverDoIt.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/AppManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java" />
       </list>
     </option>
@@ -2346,51 +2464,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoppingFun" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shoppingfun" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="fragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoppingFun" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shoppingfun" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialogs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2799,7 +2873,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498757186108</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Passing Parameters to inner classes fragment to adapter and adapter to viewholder">
+      <created>1498757861932</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1498757861932</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2898,7 +2979,8 @@
     <MESSAGE value="user adapter in ShareFragment" />
     <MESSAGE value="Share Dialog" />
     <MESSAGE value="Parcelable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parcelable" />
+    <MESSAGE value="Passing Parameters to inner classes fragment to adapter and adapter to viewholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passing Parameters to inner classes fragment to adapter and adapter to viewholder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2911,21 +2993,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java</url>
-          <line>76</line>
-          <properties field="userList" class="hackeru.edu.shoppingfun.dialogs.ShareFragment.UserAdapter" />
-          <option name="timeStamp" value="18" />
+          <line>104</line>
+          <properties field="dialog" class="hackeru.edu.shoppingfun.dialogs.ShareFragment.UserAdapter.UserViewHolder" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java</url>
-          <line>100</line>
-          <properties field="userList" class="hackeru.edu.shoppingfun.dialogs.ShareFragment.UserAdapter.UserViewHolder" />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java</url>
-          <line>101</line>
-          <properties field="user" class="hackeru.edu.shoppingfun.dialogs.ShareFragment.UserAdapter.UserViewHolder" />
-          <option name="timeStamp" value="22" />
+          <line>79</line>
+          <properties field="dialog" class="hackeru.edu.shoppingfun.dialogs.ShareFragment.UserAdapter" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/UserListFragment.java</url>
@@ -2935,30 +3011,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java</url>
-          <line>82</line>
+          <line>85</line>
           <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java</url>
-          <line>79</line>
+          <line>81</line>
           <properties class="hackeru.edu.shoppingfun.dialogs.ShareFragment.UserAdapter" method="&lt;init&gt;" />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
@@ -3132,17 +3196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -3184,16 +3237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="98" column="28" selection-start-line="92" selection-start-column="6" selection-end-line="98" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3328,10 +3371,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/UserListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="118" column="74" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="60">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="23" />
           <folding>
             <element signature="docComment;class#User#0" expanded="false" />
             <element signature="method#User#0;class#User#0" expanded="false" />
@@ -3346,35 +3397,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/models/UserList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        <state relative-caret-position="330">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#UserList#0;class#UserList#0" expanded="false" />
             <element signature="method#UserList#1;class#UserList#0" expanded="false" />
             <element signature="method#toString#0;class#UserList#0" expanded="false" />
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2442#2443#0" expanded="true" />
-            <element signature="e#2491#2492#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/UserListFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="118" column="74" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="74" />
+        <state relative-caret-position="210">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/AppManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_products.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/fragments/ListProductsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/hackeru/edu/shoppingfun/dialogs/ShareFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+        <state relative-caret-position="-1451">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
           <folding />
         </state>
       </provider>
