@@ -1,10 +1,13 @@
 package hackeru.edu.shoppingfun.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * User Shopping Lists: Name, owner, listID, ownerImage
  */
 
-public class UserList {
+public class UserList implements Parcelable {
     //Properties
     private String name; //ex: Groceries
     private String ownerID; //ex: oisdf9i23ri92rf
@@ -57,4 +60,36 @@ public class UserList {
                 ", listID='" + listID + '\'' +
                 '}';
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.name);
+        dest.writeString(this.ownerID);
+        dest.writeString(this.ownerImage);
+        dest.writeString(this.listID);
+    }
+
+    protected UserList(Parcel in) {
+        this.name = in.readString();
+        this.ownerID = in.readString();
+        this.ownerImage = in.readString();
+        this.listID = in.readString();
+    }
+
+    public static final Parcelable.Creator<UserList> CREATOR = new Parcelable.Creator<UserList>() {
+        @Override
+        public UserList createFromParcel(Parcel source) {
+            return new UserList(source);
+        }
+
+        @Override
+        public UserList[] newArray(int size) {
+            return new UserList[size];
+        }
+    };
 }

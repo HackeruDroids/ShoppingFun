@@ -1,12 +1,15 @@
 package hackeru.edu.shoppingfun.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.firebase.auth.FirebaseUser;
 
 /**
  * A User class
  */
 //pojo
-public class User {
+public class User implements Parcelable {
     //Properties:
     private String uid;
     private String displayName;
@@ -52,4 +55,30 @@ public class User {
                 ", profileImage='" + profileImage + '\'' +
                 '}';
     }
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.uid);
+        dest.writeString(this.displayName);
+        dest.writeString(this.profileImage);
+    }
+    protected User(Parcel in) {
+        this.uid = in.readString();
+        this.displayName = in.readString();
+        this.profileImage = in.readString();
+    }
+    public static final Parcelable.Creator<User> CREATOR = new Parcelable.Creator<User>() {
+        @Override
+        public User createFromParcel(Parcel source) {
+            return new User(source);
+        }
+
+        @Override
+        public User[] newArray(int size) {
+            return new User[size];
+        }
+    };
 }

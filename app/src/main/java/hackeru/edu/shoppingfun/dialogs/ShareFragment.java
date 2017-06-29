@@ -23,10 +23,13 @@ import butterknife.Unbinder;
 import de.hdodenhof.circleimageview.CircleImageView;
 import hackeru.edu.shoppingfun.R;
 import hackeru.edu.shoppingfun.models.User;
+import hackeru.edu.shoppingfun.models.UserList;
 
 /**
  * A simple {@link Fragment} subclass.
- */public class ShareFragment extends BottomSheetDialogFragment {
+ */
+public class ShareFragment extends BottomSheetDialogFragment {
+
 
     //find the recycler by id
     @BindView(R.id.rvUsers)
@@ -35,13 +38,24 @@ import hackeru.edu.shoppingfun.models.User;
     Unbinder unbinder;
     UserAdapter adapter;
 
+    UserList model;
+
+    // Factory method: take a model and put it in the ShareFragment newInstance
+    public static ShareFragment newInstance(UserList model) {
+        Bundle args = new Bundle();
+        args.putParcelable("model", model);
+        ShareFragment fragment = new ShareFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_share, container, false);
         unbinder = ButterKnife.bind(this, view);
-
+        model = getArguments().getParcelable("model");
         rvUsers.setLayoutManager(new LinearLayoutManager(getContext()));
 
         Query query = FirebaseDatabase.getInstance().getReference("Users");
