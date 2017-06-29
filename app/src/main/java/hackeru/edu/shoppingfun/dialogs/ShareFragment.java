@@ -30,7 +30,6 @@ import hackeru.edu.shoppingfun.models.UserList;
  */
 public class ShareFragment extends BottomSheetDialogFragment {
 
-
     //find the recycler by id
     @BindView(R.id.rvUsers)
     RecyclerView rvUsers;
@@ -59,7 +58,7 @@ public class ShareFragment extends BottomSheetDialogFragment {
         rvUsers.setLayoutManager(new LinearLayoutManager(getContext()));
 
         Query query = FirebaseDatabase.getInstance().getReference("Users");
-        adapter = new UserAdapter(getContext(), query);
+        adapter = new UserAdapter(getContext(), query, model);
         rvUsers.setAdapter(adapter);
 
         return view;
@@ -73,12 +72,15 @@ public class ShareFragment extends BottomSheetDialogFragment {
 
 
     public static class UserAdapter extends FirebaseRecyclerAdapter<User, UserAdapter.UserViewHolder> {
+        //Properties:
         private Context context;
+        private UserList userList;
 
-        //Constructor that takes the Query and Context.
-        public UserAdapter(Context context, Query query) {
+        //Constructor that takes the Query, Context & UserList.
+        public UserAdapter(Context context, Query query, UserList userList) {
             super(User.class, R.layout.share_item, UserViewHolder.class, query);
             this.context = context;
+            this.userList = userList;
         }
 
         @Override
@@ -88,17 +90,28 @@ public class ShareFragment extends BottomSheetDialogFragment {
 
             //bind the user image from the model to the ImageView in VH:
             Glide.with(context).load(model.getProfileImage()).into(viewHolder.ivProfile);
+            viewHolder.user = model;
+            viewHolder.userList = userList;
         }
 
         //ViewHolder
-        public static class UserViewHolder extends RecyclerView.ViewHolder {
+        public static class UserViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
             CircleImageView ivProfile;
             TextView tvUserName;
+            UserList userList;
+            User user;
 
             public UserViewHolder(View itemView) {
                 super(itemView);
                 ivProfile = (CircleImageView) itemView.findViewById(R.id.ivProfile);
                 tvUserName = (TextView) itemView.findViewById(R.id.tvUserName);
+                itemView.setOnClickListener(this);
+            }
+
+            @Override
+            public void onClick(View v) {
+                //1) get a ref to the userList table
+                //2) ref.setValue(...)
             }
         }
     }

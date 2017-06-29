@@ -116,7 +116,7 @@ public class UserListFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 try {
-                    ShareFragment dialog = new ShareFragment();
+                    ShareFragment dialog = ShareFragment.newInstance(model);
                     dialog.show(userListsFragment.getChildFragmentManager(), "shareDialog");
                 } catch (Exception e) {
                     e.printStackTrace();
