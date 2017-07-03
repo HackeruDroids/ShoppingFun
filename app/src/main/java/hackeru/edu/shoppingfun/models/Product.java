@@ -56,17 +56,20 @@ public class Product implements Parcelable {
     public int describeContents() {
         return 0;
     }
+
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.name);
         dest.writeString(this.addedBy);
         dest.writeByte(this.purchased ? (byte) 1 : (byte) 0);
     }
+
     protected Product(Parcel in) {
         this.name = in.readString();
         this.addedBy = in.readString();
         this.purchased = in.readByte() != 0;
     }
+
     public static final Parcelable.Creator<Product> CREATOR = new Parcelable.Creator<Product>() {
         @Override
         public Product createFromParcel(Parcel source) {
